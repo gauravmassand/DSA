@@ -91,6 +91,9 @@ public class LinkedListImplementation {
     }
 
     private void deleteAtPosition(int position) {
+        if(position==1) {
+            head=null;
+        }
         Node currentNode = head;
         int counter=1;
         while (counter<position-1 && currentNode.next!=null) {
